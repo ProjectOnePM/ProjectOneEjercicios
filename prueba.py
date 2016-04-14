@@ -1,1 +1,1 @@
-prueba.txt
+print("hola mundo")

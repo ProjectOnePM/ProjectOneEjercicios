@@ -1,6 +1,6 @@
 
 mes=input("¿Asistio todo el mes? 1:SI/2:NO : ")
-horas=input("¿Cuantas horas asistio domingos ? : ")
+horas=input("¿Cuantas horas asistio los domingos ? : ")
 
 if mes.isdigit() and horas.isdigit() :
 	horas_int=int(horas)

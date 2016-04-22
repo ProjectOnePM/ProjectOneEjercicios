@@ -6,7 +6,7 @@ integrantes:
 
 Arce Dennis;
 
-Domingez Laura;
+Dominguez Laura;
 
 Fernando Fernandez;
 

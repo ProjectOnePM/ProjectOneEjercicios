@@ -11,6 +11,6 @@ Fernando Fernandez; ejercicios: k l m n o
 Mierez Facundo; ejercicios: p q r s t
 
 
-p/d: los ejercicios de facundo estan en la version 3.5.1 los demas estan en la 2.7.11
+p/d: los ejercicios estan en la version 2.7.11
 
 

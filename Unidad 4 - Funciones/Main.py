@@ -1,4 +1,6 @@
+from Funciones.UT4ejeF import *
 from Funciones.UT4ejeG import *
+from Funciones.UT4ejeH import *
 from Funciones.UT4ejeK import *
 from Funciones.UT4ejeL import *
 from Funciones.UT4ejeM import *

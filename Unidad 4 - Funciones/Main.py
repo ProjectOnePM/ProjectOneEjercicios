@@ -54,9 +54,9 @@ while (op!='n'):
 		print "Falta hacer"
 	elif(eje=='f'):
 		ra=input("Ingrese radio de la base : " )
-		ga=input("Ingrese genetriz del cono: " )
+		ga=input("Ingrese generatriz del cono: " )
 		t= funcionCono(ra,ga)
-		print "el numero es ", t
+		print "La superficie del cono es: ", t
 	elif(eje=='g'):
 		pepe=raw_input("Ingrese un Caracter ")
 		funcion_Mayuscula(pepe)

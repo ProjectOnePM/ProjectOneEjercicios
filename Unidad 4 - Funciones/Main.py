@@ -1,6 +1,7 @@
 from Funciones.UT4ejeF import *
 from Funciones.UT4ejeG import *
 from Funciones.UT4ejeH import *
+from Funciones.UT4ejeJ import *
 from Funciones.UT4ejeK import *
 from Funciones.UT4ejeL import *
 from Funciones.UT4ejeM import *
@@ -9,7 +10,7 @@ from Funciones.UT4ejeO import *
 from Funciones.UT4ejeP import *
 from Funciones.UT4ejeQ import *
 from Funciones.UT4ejeR import *
-from Funciones.UT4ejeT import *
+
 op='s'
 Salir=['s','n']
 Lista=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t"]
@@ -67,7 +68,9 @@ while (op!='n'):
 	elif(eje=='i'):
 		print "Falta hacer"
 	elif(eje=='j'):
-		print "Falta hacer"
+		n=input("Ingrese el numero:")
+		numero=funcionimpares(n)
+		print "La suma de numeros impares es:", numero
 	elif(eje=='k'):
 		h=float(input("ingrese el numero armonico que desea calcular: "))
 		har=harmonico(h)
@@ -122,8 +125,7 @@ while (op!='n'):
 	elif(eje=='s'):
 		print "falta ejercicio s"
 	else:
-		digito=input('Ingrese Digito: ')
-		print(suma_digito(digito))
+		print "falta ejercicio t"
 	op=""
 	while (op not in Salir):
 		op=raw_input("Desea ejecutar otro ejercicio?  s/n : ")

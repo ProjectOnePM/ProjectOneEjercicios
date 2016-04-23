@@ -51,12 +51,17 @@ while (op!='n'):
 	elif(eje=='e'):
 		print "Falta hacer"
 	elif(eje=='f'):
-		print "Falta hacer"
+		ra=input("Ingrese radio de la base : " )
+		ga=input("Ingrese genetriz del cono: " )
+		t= funcionCono(ra,ga)
+		print "el numero es ", t
 	elif(eje=='g'):
 		pepe=raw_input("Ingrese un Caracter ")
 		funcion_Mayuscula(pepe)
 	elif(eje=='h'):
-		print "Falta hacer"
+		n=input("Ingrese numero que desee sacar el promedio:")
+		total=funcionprom(n)
+		print "Promedio de los numeros es:",total
 	elif(eje=='i'):
 		print "Falta hacer"
 	elif(eje=='j'):

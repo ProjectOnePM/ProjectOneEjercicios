@@ -8,8 +8,3 @@ def encontrarsuma(a,b,c):
 	else:
 		return ("No hay dos numeros que se sumen y el tercero sea el resultado")
 
-a=input("ingrese el primer numero: ")
-b=input("ingrese el segundo numero: ")
-c=input("ingrese el tercer numero: ")
-busqueda=encontrarsuma(a,b,c)
-print busqueda

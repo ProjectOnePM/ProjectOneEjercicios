@@ -6,7 +6,3 @@ def entero_string(s,n):
 	else:
 		print("NO IGUAL")
 
-palabra= input("INGRESE STRING: "
-print(" ")
-entero = input("INGRESE NUMERO: ")
-print(entero_string(palabra,entero))

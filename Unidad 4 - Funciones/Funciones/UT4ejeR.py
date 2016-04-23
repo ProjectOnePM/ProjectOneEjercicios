@@ -13,12 +13,4 @@ def edades(edad1,edad2):
 		return "SON IGUALES"
 
 
-edad1=input("INGRESE EDAD: ")
-print(" ")
-edad2=input("INGRESE EDAD: ")
 
-a,b=edades(edad1,edad2)
-print(" ")
-print("LA EDAD MAYOR ES: ",a)
-print(" ")
-print("LA DIFERENCIA ES DE :",b," años")

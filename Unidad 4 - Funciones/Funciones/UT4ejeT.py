@@ -6,9 +6,6 @@ def suma_digito(n):
 		total +=int(i) 
 	return total
 
-digito=input('Ingrese Digito: ')
-
-print(suma_digito(digito))
 
 
 

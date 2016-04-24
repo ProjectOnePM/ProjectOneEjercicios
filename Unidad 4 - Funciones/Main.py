@@ -1,3 +1,8 @@
+from Funciones.UT4ejeA import *
+from Funciones.UT4ejeB import *
+from Funciones.UT4ejeC import *
+from Funciones.UT4ejeD import *
+from Funciones.UT4ejeE import *
 from Funciones.UT4ejeF import *
 from Funciones.UT4ejeG import *
 from Funciones.UT4ejeH import *
@@ -44,15 +49,21 @@ while (op!='n'):
 	print ""
 	print ("------------Ejercicio %s-------------")%(eje)
 	if (eje=='a'):
-		print "aun no se codifico"
+		a=input("ingrese un numero natural: ")
+		impNat(a)
 	elif(eje=='b'):
-		print "falta hacer"
+		a=input("ingrese un numero natural: ")
+		print impNat(a)
 	elif(eje=='c'):
-		print "Falta hacer"
+		a=input("ingrese un numero natural: ")
+		impParImparNat(a)
 	elif(eje=='d'):
-		print "Falta hacer"
+		a=input("ingrese un numero entero: ")
+		b=input("ingrese la potencia: ")
+		print exp(a,b)
 	elif(eje=='e'):
-		print "Falta hacer"
+		a=input("ingrese un numero entero para calcular el factorial: ")
+		print fact(a)
 	elif(eje=='f'):
 		ra=input("Ingrese radio de la base : " )
 		ga=input("Ingrese generatriz del cono: " )

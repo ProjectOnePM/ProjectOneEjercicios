@@ -10,6 +10,3 @@ def funcionnumero(n):
 	elif (n>sum):
 		return"Es un numero deficiente"
 
-n=input("Ingrese el numero: ")
-numero=funcionnumero(n)
-print numero

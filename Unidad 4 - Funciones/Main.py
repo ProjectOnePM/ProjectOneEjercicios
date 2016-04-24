@@ -15,6 +15,8 @@ from Funciones.UT4ejeO import *
 from Funciones.UT4ejeP import *
 from Funciones.UT4ejeQ import *
 from Funciones.UT4ejeR import *
+from Funciones.UT4ejeS import *
+from Funciones.UT4ejeT import *
 
 op='s'
 Salir=['s','n']
@@ -124,6 +126,8 @@ while (op!='n'):
 		entero = input("INGRESE NUMERO: ")
 		print(entero_string(palabra,entero))
 	elif(eje=='r'):
+		primo_no_primo()
+	elif(eje=='s'):
 		edad1=input("INGRESE EDAD: ")
 		print(" ")
 		edad2=input("INGRESE EDAD: ")
@@ -133,10 +137,9 @@ while (op!='n'):
 		print("LA EDAD MAYOR ES: ",a)
 		print(" ")
 		print("LA DIFERENCIA ES DE :",b," anios")
-	elif(eje=='s'):
-		print "falta ejercicio s"
 	else:
-		print "falta ejercicio t"
+		dinero=input("ingrese el dinero que desea calcular la cantidad de billetes: $")
+		vuelto_billites(dinero)
 	op=""
 	while (op not in Salir):
 		op=raw_input("Desea ejecutar otro ejercicio?  s/n : ")

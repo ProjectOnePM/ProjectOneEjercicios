@@ -79,7 +79,9 @@ while (op!='n'):
 		total=funcionprom(n)
 		print "Promedio de los numeros es:",total
 	elif(eje=='i'):
-		print "Falta hacer"
+		n=input("Ingrese el numero: ")
+		numero=funcionnumero(n)
+		print numero
 	elif(eje=='j'):
 		n=input("Ingrese el numero:")
 		numero=funcionimpares(n)
@@ -141,6 +143,7 @@ while (op!='n'):
 		dinero=input("ingrese el dinero que desea calcular la cantidad de billetes: $")
 		vuelto_billites(dinero)
 	op=""
+	print ""
 	while (op not in Salir):
 		op=raw_input("Desea ejecutar otro ejercicio?  s/n : ")
 

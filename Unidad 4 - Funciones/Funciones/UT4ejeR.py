@@ -15,7 +15,7 @@ def primo_no_primo():
 				for i in range(0,len(multiplos_resul)):
 					print("NUMERO: ", multiplos_resul[i])
 		except:
-			print(" El NÚMERO TIENE QUE SER UN NUMERO NATURAL")
+			print(" El NUMERO TIENE QUE SER UN NUMERO NATURAL")
 
 
 def es_primo(var):

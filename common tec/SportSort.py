@@ -1,5 +1,50 @@
 from control.control_digito import *
 from control.control_letra import *
+from coloramaMaster.colorama import Fore, Back, Style, init
+init()
+def ingresar_nombre():
+	nombreApe=input("Ingrese nombre y apellido:")
+	print("")
+	controlN=esLetra(nombreApe)
+	if controlN==1:
+		return False
+	else:
+
+		print ("Error! Ingreso equivocado")
+		print(" ")
+		return True
+
+def ingresar_sexo():
+	sexo=(input("Ingrese Sexo H/M: ")).upper()
+	if(sexo=="H" or sexo == "M"):
+		return False,sexo
+	else:
+		
+		print("Error! Ingreso equivocado")
+		print("")#Espacio
+		return True,sexo
+
+
+def ingresar_edad():
+	edad=(input("Ingrese la edad: "))
+	controlE=esNumero(edad)
+	if(controlE==1):
+		edad=int(edad)
+		if edad > 0 and edad < 100:
+			return False,edad
+		else:
+			
+			print("Error! fuera de rango")
+			print("")
+			return True
+	else:
+		
+		print("Error! Ingreso equivocado")
+		print("")#Espacio
+		return True
+
+
+
 #Contadores
 cantP=0
 contH=0
@@ -26,8 +71,8 @@ salir=False
 
 print("")#Espacio
 print("")#Espacio
-
-print("-------Bienvenido Usuario-------") #Titulo 
+#print(Back.GREEN)
+print(Fore.CYAN+"-------Bienvenido Usuario-------") #Titulo 
 
 while salir!=True:
 	
@@ -41,40 +86,16 @@ while salir!=True:
 	print("")#Espacio
 
 	while mientrasN==True:
-		nombreApe=input("Ingrese nombre y apellido:")
-		print("")
-		controlN=esLetra(nombreApe)
-		if controlN==1:
-			mientrasN=False
-		else:
-
-			print ("Error! Ingreso equivocado")
-			print(" ")
+		mientrasN=ingresar_nombre()
 
 	
 	while mientrasS==True:
-		sexo=(input("Ingrese Sexo H/M: ")).upper()
-		if(sexo=="H" or sexo == "M"):
-			mientrasS=False
-		else:
-			print("Error! Ingreso equivocado")
-			print("")#Espacio
+		mientrasS,sexo=ingresar_sexo()
 
 	print(" ")
 
 	while mientrasE==True:
-		edad=(input("Ingrese la edad: "))
-		controlE=esNumero(edad)
-		if(controlE==1):
-			edad=int(edad)
-			if edad > 0 and edad < 100:
-				mientrasE=False
-			else:
-				print("Error! fuera de rango")
-				print("")
-		else:
-			print("Error! Ingreso equivocado")
-			print("")#Espacio
+		mientrasE,edad=ingresar_edad()
 	
 	
 	while mientras==True: #Verifica si se ingreso S o N, sino vuelve a recorrer
@@ -123,7 +144,6 @@ while salir!=True:
 		else:
 			print("Error! Ingreso equivocado!")
 		
-		
 	cantP=cantP+1
 
 	print("")#Espacio
@@ -136,11 +156,11 @@ while salir!=True:
 		if terminar=="N":
 			salir=True
 			mientrasT=False
-		if terminar=="S":
+		elif terminar=="S":
 			mientrasT=False
 		else:
 			print("")
-			print("Error! Ingreso equivocado!")
+			print("Error! Ingresoooo equivocado!")
 
 	
 print("")#Espacio
@@ -176,9 +196,9 @@ if(contH>0):
 	print(" ")
 	print("El porcentaje de hombres menores de edad que hacen deporte es de %",((contMenorDeEdadH*100)/contH))
 	print("")
-	print("El porcentaje de hombres mayores de edad que NO deporte es de %",((contMayorDeEdadHN*100)/contH))
+	print("El porcentaje de hombres mayores de edad que NO hacen deporte es de %",((contMayorDeEdadHN*100)/contH))
 	print(" ")
-	print("El porcentaje de hombres menores de edad que NO deporte es de %",((contMenorDeEdadHN*100)/contH))
+	print("El porcentaje de hombres menores de edad que NO hacen deporte es de %",((contMenorDeEdadHN*100)/contH))
 
 print("")#Espacio
 
@@ -192,7 +212,8 @@ if(contH>0):
 	print("")#Espacio
 
 print("")#Espacio
-print("---------------------------MUJERES----------------------------------")
+if contM>0:
+	print("---------------------------MUJERES----------------------------------")
 print("")#Espacio
 if(contM>0):
 	print("El porcentaje de mujeres mayores de edad que hacen deporte es de %",((contMayorDeEdadM*100)/contM))
